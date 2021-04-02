@@ -1,0 +1,332 @@
+
+@charset "UTF-8";
+/* 
+* Author: Luca Antognetti
+* Ispirated by: 
+*/
+/*!
+* Start Bootstrap - Freelancer v6.0.5 (https://startbootstrap.com/theme/freelancer)
+* Copyright 2013-2020 Start Bootstrap
+* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-freelancer/blob/master/LICENSE)
+*/
+
+:root {
+    --mybackgound:   #252525 ;
+    --myforeground:  #dcdccc ;
+    --myrobinegg:    #00cccc ;
+    --myblue:        #007bff ;
+    --mylavender:    #b57edc ;
+    --mypurple:      #6f42c1 ;
+    --myred:         #d9534f ;
+    --myorange:      #fd7e14 ;
+    --myyellow:      #f0ad4e ;
+    --mygreen:       #28a745 ;
+    --mypalegreen:   #98fb98 ;
+    --myteal:        #20c997 ;
+    --mycyan:        #17a2b8 ;
+    --mygrey:        #757575 ;
+    --mylightgrey:   #93a1a1 ;
+    --mywhite:       #ffffff ;
+    --mydark:        #252525 ;
+    --myblack:       #000000 ;
+
+}
+
+
+
+
+body {
+    margin: 0;
+    font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-bottom: 0.5rem;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.my-btn {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+    padding: 0;
+}
+
+.my-bg-dark{
+    background-color: var(--mydark);
+}
+
+.my-bg-black{
+    background-color: var(--myblack);
+}
+
+.my-bg-green{
+    background-color: var(--mygreen);
+}
+
+.my-bg-blue{
+    background-color: var(--myblue);
+}
+
+.my-text-ligth-gray {
+
+    color: var(--mylightgrey);
+
+}     
+
+
+
+/* Backgound animation */
+.my-bg-image {
+    background-image:url("/assets/images/bg.jpg");
+    background-size: cover; /* Resize the background image to cover the entire container */
+    
+}
+.animate-bg {
+
+}
+
+@media (min-width: 992px) {
+    .animate-bg {
+        -webkit-animation: 80s backgroundScroll infinite linear;
+        -moz-animation: 80s backgroundScroll infinite linear;
+        -o-animation: 80s backgroundScroll infinite linear;
+        -ms-animation: 80s backgroundScroll infinite linear;
+        animation: 80s backgroundScroll infinite linear; 
+        transform: translateZ(0);
+    }
+} 
+
+
+@-webkit-keyframes backgroundScroll {
+
+from {
+    background-position: 0%;
+}
+to {
+    background-position: 100%;
+}
+}
+
+@keyframes backgroundScroll {
+from {
+    background-position: 0%;
+}
+to {
+    background-position: 100%;
+}
+}
+
+
+/* For Back-to-top button */
+
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+}
+.back-to-top a{
+    background-color: rgba(33, 37, 41, 0.5);
+    border-color:  rgba(33, 37, 41, 0.5);
+}
+
+
+
+
+
+/* For my navigation bar */
+#myNav {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: 700;
+}
+
+#myNav .navbar-brand {
+    color: var(--myforeground);
+}
+
+#myNav .navbar-nav {
+    margin-top: 1rem;
+}
+
+#myNav .navbar-nav li.nav-item a.nav-link {
+    color: var(--myforeground);
+}
+
+#myNav .navbar-nav li.nav-item a.nav-link:hover {
+    color: var(--mygreen);
+}
+
+#myNav .navbar-nav li.nav-item a.nav-link:active, #myNav .navbar-nav li.nav-item a.nav-link:focus {
+    color: var(--myforeground);
+}
+
+#myNav .navbar-nav li.nav-item a.nav-link.active {
+    color: var(--mygreen);
+}
+
+#myNav .navbar-toggler {
+    font-size: 80%;
+    padding: 0.8rem;
+}
+
+
+@media (min-width: 992px) {
+    #myNav {
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        transition: padding-top 0.3s, padding-bottom 0.3s;
+    }
+    #myNav .navbar-brand {
+        font-size: 1.75em;
+        transition: font-size 0.3s;
+    }
+    #myNav .navbar-nav {
+        margin-top: 0;
+    }
+    #myNav .navbar-nav > li.nav-item > a.nav-link.active {
+        color: var(--myforeground);
+        background: var(--mygreen);
+    }
+    #myNav .navbar-nav > li.nav-item > a.nav-link.active:active, #myNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #myNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
+        color: var(--myforeground);
+        background: var(--mygreen);
+    } 
+
+
+    #myNav.navbar-shrink {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    #myNav.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }
+
+}
+/* My divider */
+
+.divider-custom {
+    margin: 1.25rem 0 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider-custom .divider-custom-line {
+    width: 100%;
+    max-width: 7rem;
+    height: 0.25rem;
+    background-color: var(--mydark);
+    border-radius: 1rem;
+    border-color: var(--mydark) !important;
+}
+
+.divider-custom .divider-custom-line:first-child {
+    margin-right: 1rem;
+}
+
+.divider-custom .divider-custom-line:last-child {
+    margin-left: 1rem;
+}
+
+.divider-custom .divider-custom-icon {
+    color: var(--mydark) !important;
+    font-size: 2rem;
+}
+
+.divider-custom.divider-light .divider-custom-line {
+    background-color: var(--mywhite);
+}
+
+.divider-custom.divider-light .divider-custom-icon {
+    color: var(--mywhite) !important;
+}
+
+/* My profile image */
+
+
+.masthead {
+    padding-top: calc(6rem + 0px);
+    padding-bottom: 6rem;
+}
+.masthead .masthead-heading {
+    font-size: 2.75rem;
+    line-height: 2.75rem;
+}
+.masthead .masthead-subheading {
+    font-size: 1.25rem;
+}
+.masthead .masthead-avatar {
+    width: 15rem;
+}
+
+@media (min-width: 992px) {
+    .masthead {
+        padding-top: calc(6rem + 0px);
+        padding-bottom: 6rem;
+    }
+    .masthead .masthead-heading {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+    .masthead .masthead-subheading {
+        font-size: 1.5rem;
+    }
+}
+
+/* My portfolio items */
+
+.portfolio .portfolio-item {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    max-width: 25rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.portfolio .portfolio-item .portfolio-item-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    background-color:rgba(0,123,255,0.5)
+}
+.portfolio .portfolio-item .portfolio-item-caption:hover {
+    opacity: 1;
+}
+.portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
+    font-size: 1.5rem;
+}
+
+.portfolio-modal .portfolio-modal-title {
+    font-size: 2.25rem;
+    line-height: 2rem;
+}
+@media (min-width: 992px) {
+    .portfolio-modal .portfolio-modal-title {
+        font-size: 3rem;
+        line-height: 2.5rem;
+    }
+}
+.portfolio-modal .close {
+    position: absolute;
+    z-index: 1;
+    right: 1.5rem;
+    top: 1rem;
+    font-size: 3rem;
+    line-height: 3rem;
+    color: #1abc9c;
+    opacity: 1;
+}
