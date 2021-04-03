@@ -1,8 +1,40 @@
-- name: WhatsSee
-  url: https://github.com/luca-ant/WhatsSee
 - name: Deep Comedy
-  url: https://github.com/luca-ant/deep_comedy
+  github: https://github.com/luca-ant/deep_comedy
+  image: /assets/images/portfolio/deep_comedy.png
+  tag: AI - Natural Language Generation
+  description: Poetry generation with Recurrent Neural Networks aimed to reproduce Dante's writing style.
+- name: WhatsSee
+  github: https://github.com/luca-ant/WhatsSee
+  image: /assets/images/portfolio/whatssee.png
+  tag: AI - Image Captioning
+  description: 
+- name: Rubbish detection
+  github: https://github.com/luca-ant/rubbish_detection
+  image: /assets/images/portfolio/rubbish_detection.jpg
+  tag: AI - Image Recognition
+  description: 
 - name: SortingHat
-  url: https://github.com/luca-ant/SortingHat
+  github: https://github.com/luca-ant/SortingHat
+  image: /assets/images/portfolio/deep_comedy.jpg
+  tag: Computer Vision
+  description: 
 - name: Gaze Traker
-  url: https://github.com/luca-ant/gaze_tracker
+  github: https://github.com/luca-ant/gaze_tracker
+  image: /assets/images/portfolio/deep_comedy.jpg
+  tag: Computer Vision
+  description: 
+- name: UniboTimetableBot
+  github: https://github.com/luca-ant/unibotimetablesbot
+  image: /assets/images/portfolio/unibotimetablesbot.jpg
+  tag: Telegram Bot
+  description: 
+- name: BusBoloBot
+  github: https://github.com/luca-ant/busbolobot
+  image: /assets/images/portfolio/busbolobot.jpg
+  tag: Telegram Bot
+  description: 
+- name: AI Tablut player
+  github: https://github.com/luca-ant/tablutchallenge
+  image: /assets/images/portfolio/tablutchallenge.jpg
+  tag: AI Game
+  description: 
