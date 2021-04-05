@@ -1,14 +1,14 @@
 
 @charset "UTF-8";
-/* 
-* Author: Luca Antognetti
-* Ispirated by: 
-*/
+/*
+ * Author: Luca Antognetti
+ * Ispirated by: 
+ */
 /*!
-* Start Bootstrap - Freelancer v6.0.5 (https://startbootstrap.com/theme/freelancer)
-* Copyright 2013-2020 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-freelancer/blob/master/LICENSE)
-*/
+ * Start Bootstrap - Freelancer v6.0.5 (https://startbootstrap.com/theme/freelancer)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-freelancer/blob/master/LICENSE)
+ */
 
 :root {
     --mybackgound:   #252525 ;
@@ -79,7 +79,12 @@ h1, h2, h3, h4, h5, h6,
 .my-text-foreground {
     color: var(--myforeground);
 }     
-
+.my-text-green {
+    color: var(--mygreen);
+}     
+.my-text-blue {
+    color: var(--myblue);
+}     
 .my-text-ligth-gray {
     color: var(--mylightgrey);
 } 
@@ -90,14 +95,22 @@ h1, h2, h3, h4, h5, h6,
 }
 
 
+
+
+
 /* Backgound animation */
 .my-bg-image {
     background-image:url("/assets/images/bg.jpg");
     background-size: cover; /* Resize the background image to cover the entire container */
-    
+
 }
 .animate-bg {
-
+    -webkit-animation: 80s backgroundScroll infinite linear;
+    -moz-animation: 80s backgroundScroll infinite linear;
+    -o-animation: 80s backgroundScroll infinite linear;
+    -ms-animation: 80s backgroundScroll infinite linear;
+    animation: 80s backgroundScroll infinite linear; 
+    transform: translateZ(0);
 }
 
 @media (min-width: 992px) {
@@ -114,21 +127,21 @@ h1, h2, h3, h4, h5, h6,
 
 @-webkit-keyframes backgroundScroll {
 
-from {
-    background-position: 0%;
-}
-to {
-    background-position: 100%;
-}
+    from {
+        background-position: 0%;
+    }
+    to {
+        background-position: 100%;
+    }
 }
 
 @keyframes backgroundScroll {
-from {
-    background-position: 0%;
-}
-to {
-    background-position: 100%;
-}
+    from {
+        background-position: 0%;
+    }
+    to {
+        background-position: 100%;
+    }
 }
 
 
@@ -151,10 +164,11 @@ to {
 
 /* For my navigation bar */
 #myNav {
-    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    font-weight: 700;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    font-weight: 700 !important;
+    background-color: var(--mydark) !important;
 }
 
 #myNav .navbar-brand {
@@ -185,6 +199,12 @@ to {
     font-size: 80%;
     padding: 0.8rem;
 }
+
+/* My LA */
+.my-la {
+    width: 2rem;
+}
+
 
 
 @media (min-width: 992px) {
@@ -217,6 +237,12 @@ to {
     #myNav.navbar-shrink .navbar-brand {
         font-size: 1.5em;
     }
+    /* My LA */
+.my-la {
+    width: 3rem;
+}
+
+
 
 }
 /* My divider */
@@ -276,6 +302,14 @@ to {
 .masthead .masthead-avatar {
     width: 15rem;
 }
+.avatar-about {
+    width: 15rem;
+}
+
+.avatar-footer {
+    width: 7rem;
+}
+
 
 @media (min-width: 992px) {
     .masthead {
@@ -289,4 +323,9 @@ to {
     .masthead .masthead-subheading {
         font-size: 1.5rem;
     }
+}
+
+
+.footer {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
 }

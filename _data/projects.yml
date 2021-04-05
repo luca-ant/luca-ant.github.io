@@ -1,11 +1,11 @@
 - name: Deep Comedy
   github: https://github.com/luca-ant/deep_comedy
-  image: /assets/images/portfolio/deep_comedy.png
+  image: /assets/images/portfolio/deep_comedy.gif
   tag: AI - Natural Language Generation
   description: Poetry generation with Recurrent Neural Networks aimed to reproduce Dante's writing style.
 - name: WhatsSee
   github: https://github.com/luca-ant/WhatsSee
-  image: /assets/images/portfolio/whatssee.png
+  image: /assets/images/portfolio/whatssee.jpg
   tag: AI - Image Captioning
   description: 
 - name: Rubbish detection
@@ -13,24 +13,29 @@
   image: /assets/images/portfolio/rubbish_detection.jpg
   tag: AI - Image Recognition
   description: 
-- name: SortingHat
+- name: Sorting Hat
   github: https://github.com/luca-ant/SortingHat
-  image: /assets/images/portfolio/deep_comedy.jpg
+  image: /assets/images/portfolio/sorting_hat.gif
   tag: Computer Vision
   description: 
 - name: Gaze Traker
   github: https://github.com/luca-ant/gaze_tracker
-  image: /assets/images/portfolio/deep_comedy.jpg
+  image: /assets/images/portfolio/gaze_tracker.gif
   tag: Computer Vision
   description: 
-- name: UniboTimetableBot
+- name: .dotfiles
+  github: https://github.com/luca-ant/dotfiles
+  image: /assets/images/portfolio/dotfiles.png
+  tag: Linux
+  description: 
+- name: UniboTimetablesBot
   github: https://github.com/luca-ant/unibotimetablesbot
-  image: /assets/images/portfolio/unibotimetablesbot.jpg
+  image: /assets/images/portfolio/unibotimetablesbot.png
   tag: Telegram Bot
   description: 
 - name: BusBoloBot
   github: https://github.com/luca-ant/busbolobot
-  image: /assets/images/portfolio/busbolobot.jpg
+  image: /assets/images/portfolio/busbolobot.png
   tag: Telegram Bot
   description: 
 - name: AI Tablut player

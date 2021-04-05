@@ -1,0 +1,53 @@
+---
+title: Contact
+layout: default
+---
+
+<div class="container-fluid my-bg-green text-white text-center mb-0 py-5" id="contact">
+
+    <h2 class="page-section-heading text-center text-uppercase mb-0">Contact Me</h2>
+    <!-- Icon Divider-->
+    <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+            <i class="fas fa-at"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+    </div>
+
+    <!-- Contacts -->
+
+    <div class="row">
+        <div class="col-sm-5 mx-auto">
+            <p class="lead">You can send me an email at:</p>
+            <div class="alert alert-success lead" role="alert">
+                <a href="mailto:{{ site.email }}" class="medium-link">{{ site.email }}</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Socials -->
+
+    <h2 class="page-section-heading text-center text-uppercase mb-0 pt-5">Socials</h2>
+    <!-- Icon Divider-->
+    <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+            <!-- <i class="fas fa-share-alt-square"></i>         -->
+            <i class="fas fa-share-alt"></i>
+        </div>
+
+
+        <div class="divider-custom-line"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-5 mx-auto">
+
+            {% include socials.html %}    
+
+
+        </div>
+
+    </div>
+</div>

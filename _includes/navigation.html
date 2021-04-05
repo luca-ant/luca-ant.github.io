@@ -7,7 +7,8 @@
     <div class="mr-auto text-white">
 
       <a class="navbar-brand"  href="/"> 
-        <span style='color: #28a745'>L</span>uca <span style='color: #007bff'>A</span>ntognetti</a>
+        <img class="my-la mr-2" src="assets/images/LA.png" alt=""/>
+        <span  class="my-text-green">L</span>uca <span class="my-text-blue">A</span>ntognetti</a>
     
       </div>
 
@@ -15,21 +16,9 @@
         Menu
         <i class="fas fa-bars"></i>
     </button>
-
-      <!-- <button class="navbar-toggler text-white btn btn-success" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-          Menu <i class="fas fa-bars"></i></span>
-      </button> -->
       
       <div class="collapse navbar-collapse text-uppercase" id="navbarResponsive">
-      <!-- <div class="collapse navbar-collapse" id="navbarResponsive"> -->
         <ul class="navbar-nav ml-auto">
-    
-          <!-- {% for item in site.data.navigation %}
-          <li class="nav-item mx-0 mx-lg-1 {% if page.url == item.link %} active {% endif %}">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded" href="{{ item.link }}">{{ item.name }}</a>
-          </li>
-          {% endfor %} -->
 
           {% for item in site.data.navigation %}
           <li class="nav-item mx-0 mx-lg-1 btn my-btn {% if page.url == item.link %} btn-primary rounded {% endif %}">
@@ -37,9 +26,7 @@
           </li>
           {% endfor %}
 
-    
         </ul>
-    
       </div>
   </div>
 
