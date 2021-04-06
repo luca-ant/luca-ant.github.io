@@ -16,7 +16,6 @@ gem "minima", "~> 2.5"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   # gem "github-pages"
-
   # gem 'jekyll-seo-tag'
 end
 

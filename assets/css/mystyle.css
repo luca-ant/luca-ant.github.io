@@ -111,21 +111,21 @@ h1, h2, h3, h4, h5, h6,
 
 }
 .animate-bg {
-    -webkit-animation: 80s backgroundScroll infinite linear;
-    -moz-animation: 80s backgroundScroll infinite linear;
-    -o-animation: 80s backgroundScroll infinite linear;
-    -ms-animation: 80s backgroundScroll infinite linear;
-    animation: 80s backgroundScroll infinite linear; 
+    -webkit-animation: 80s backgroundScroll infinite linear alternate;
+    -moz-animation: 80s backgroundScroll infinite linear alternate;
+    -o-animation: 80s backgroundScroll infinite linear alternate;
+    -ms-animation: 80s backgroundScroll infinite linear alternate;
+    animation: 80s backgroundScroll infinite linear alternate; 
     transform: translateZ(0);
 }
 
 @media (min-width: 992px) {
     .animate-bg {
-        -webkit-animation: 80s backgroundScroll infinite linear;
-        -moz-animation: 80s backgroundScroll infinite linear;
-        -o-animation: 80s backgroundScroll infinite linear;
-        -ms-animation: 80s backgroundScroll infinite linear;
-        animation: 80s backgroundScroll infinite linear; 
+        -webkit-animation: 80s backgroundScroll infinite linear alternate;
+        -moz-animation: 80s backgroundScroll infinite linear alternate;
+        -o-animation: 80s backgroundScroll infinite linear alternate;
+        -ms-animation: 80s backgroundScroll infinite linear alternate;
+        animation: 80s backgroundScroll infinite linear alternate; 
         transform: translateZ(0);
     }
 } 
