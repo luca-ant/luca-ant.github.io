@@ -95,8 +95,14 @@ h1, h2, h3, h4, h5, h6,
 }
 
 
-
-
+.image-404{
+    width: 15rem;
+}
+@media (min-width: 992px) {
+    .image-404{
+        width: 40rem;
+    }
+} 
 
 /* Backgound animation */
 .my-bg-image {
