@@ -3,9 +3,9 @@ title: Portfolio
 layout: default
 ---
 
-<div class="container-fluid text-white text-center mb-0 py-5 " id="portfolio">
+<div class="container-fluid my-bg-white mb-0 py-5" id="portfolio">
 
-    <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+    <h2 class="page-section-heading text-center text-secondary text-uppercase mb-0">Portfolio</h2>
     <!-- Icon Divider-->
     <div class="divider-custom">
         <div class="divider-custom-line"></div>
@@ -15,39 +15,47 @@ layout: default
         <div class="divider-custom-line"></div>
     </div>
 
-    <div class="card-columns">
+    <div class="card-columns text-center">
 
-        {% for item in site.data.projects %}
+        {% assign projects = site.portfolio | sort: 'priority' | reverse %}
+        {% for  project in projects %}
+        {% unless project.hidden %}
 
-        <div class="card my-card text-white bg-primary my-3">
+        <div class="card my-card border-3 border-primary text-left my-3">
 
-            <div class="card-header">
-                <p class="card-text"> {{ item.tag }} </p>
+            <div class="card-header text-center">
+                <p class="card-text"> {{ project.tag }} </p>
             </div>
 
             <div class="card-body">     
 
-                <div class="card bg-primary border-0">
-                    <img class="card-img" src="{{ item.image }}" alt="">
+                <div class="card border-0">
+                    <img class="card-img" src="{{ project.image }}" alt="">
                 </div>
 
-                <h4 class="card-title mb-0 py-3">{{ item.name }}</h4>
+                <h4 class="card-title text-center mb-0 pt-3">{{ project.name }}</h4>
 
-                <div class="text-white pb-0">              
-                    <p class="card-text"> {{ item.description }} </p>
+                <div class="">              
+                    <p class="card-text"> {{ project.content }} </p>
                 </div>
 
             </div>
 
-            <div class="card-footer">
+            <div class="card-footer text-center">
 
-                <button type="button" class="btn my-bg-dark">
-                    <a class="text-white card-link mb-0 mt-0" href="{{ item.github }}">
-                        <i class="fab fa-github"></i> GitHub</a>
-                </button>
+                {% if project.github %}
+                    <button type="button" class="btn my-bg-dark">
+                        <a class="text-white" href="{{ project.github }}">
+                            <i class="fab fa-github"></i> GitHub</a>
+                    </button>
+                {% endif %}
+                
+
+
 
             </div>
         </div>
+        {% endunless %}
 
         {% endfor %}
 

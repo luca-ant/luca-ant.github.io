@@ -68,6 +68,10 @@ h1, h2, h3, h4, h5, h6,
     background-color: var(--myblack);
 }
 
+.my-bg-white{
+    background-color: var(--mywhite);
+}
+
 .my-bg-green{
     background-color: var(--mygreen);
 }
@@ -89,6 +93,9 @@ h1, h2, h3, h4, h5, h6,
     color: var(--mylightgrey);
 } 
 
+.border-3 {
+    border-width:3px !important;
+}
 
 .my-card {
     max-width: 27rem;

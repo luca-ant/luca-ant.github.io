@@ -24,13 +24,17 @@ email: luca.antognetti2@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   A passionate Computer Engineer from Italy<br/>who loves to learn, develop projects and ... sunsets.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://luca-ant.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://luca-ant.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
-# markdown: kramdown
+markdown: kramdown
+highlighter: rouge
 theme: minima
 #plugins:
   # - jekyll-feed
+
+collections:
+  portfolio:
 
 # Exclude from processing.
 # The following items will not be processed, by default.
