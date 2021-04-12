@@ -9,6 +9,6 @@ hidden: False
 
 Are you a Linux user?
 
-You shoud have a look at my dotfiles and system configuration. \\
+You shoud have a look at my *dotfiles* and system configuration. \\
 I'm now using **Arch Linux** with **i3** window manager.
   

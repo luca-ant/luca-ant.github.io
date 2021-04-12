@@ -7,6 +7,6 @@ tag: Telegram Bot
 hidden: False
 ---
 
-A Telegram bot for Unibo lessons timetables in Bologna, written in **Python3** and based on [Unibo Opendata](https://dati.unibo.it).
+A *Telegram bot* for Unibo lessons timetables in Bologna, written in **Python3** and based on [Unibo Opendata](https://dati.unibo.it).
 
 You can find it [here](https://telegram.me/unibotimetablesbot) or searching **@unibotimetablesbot**  on Telegram!
