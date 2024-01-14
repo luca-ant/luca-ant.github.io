@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<!-- <head>
+{% if page.url == "/404.html" %}<meta http-equiv="refresh" content="5; url={{ site.baseurl }}/blog" />{% endif %}
+
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/home.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/gallery.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/selena.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/WYSIWYG.css">
+</head> -->
+
+<body class="body-padded-la">
+
+    {% include navigation.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
+
+    {% include scroll_to_top.html %}  
+
+</body>
+
+</html>
