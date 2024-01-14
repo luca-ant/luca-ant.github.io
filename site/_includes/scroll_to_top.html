@@ -1,0 +1,72 @@
+
+<div id="scroll-to-top" class="scroll-to-top">
+    <a href="#" class="btn btn-dark btn-sm d-block text-center js-scroll-trigger" role="button"><i class="fas fa-chevron-up"></i></a>
+
+</div>
+
+
+<style>
+
+    .scroll-to-top {
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        display: none;
+    }
+    .scroll-to-top a{
+        background-color: rgba(33, 37, 41, 0.5);
+        border-color:  rgba(33, 37, 41, 0.5);
+    }
+
+</style>
+
+<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+
+<script>
+
+    
+    (function($) {
+        "use strict"; // Start of use strict
+
+        // Smooth scrolling using jQuery easing
+        $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: (target.offset().top - 71)
+                    }, 1000, "easeInOutExpo");
+                    return false;
+                }
+            }
+        });
+
+        // Scroll to top button appear
+        $(document).ready(function(){
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) {
+                    $('.scroll-to-top').fadeIn();
+                } else {
+                    $('.scroll-to-top').fadeOut();
+                }
+            });
+            // scroll body to 0px on click
+            $('.scroll-to-top').click(function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 400);
+                return false;
+            });
+        });
+
+        // Activate scrollspy to add active class to navbar items on scroll
+        $('body').scrollspy({
+            target: '#nav-la',
+            offset: 80
+        });
+        
+
+    })(jQuery); // End of use strict
+
+</script>

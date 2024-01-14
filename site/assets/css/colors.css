@@ -1,0 +1,98 @@
+
+@charset "UTF-8";
+/*
+ * Author: Luca Antognetti
+ * Ispirated by: 
+ */
+/*!
+ * Start Bootstrap - Freelancer v6.0.5 (https://startbootstrap.com/theme/freelancer)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-freelancer/blob/master/LICENSE)
+ */
+
+:root {
+    --backgound-la:   #252525 ;
+    --foreground-la:  #dcdccc ;
+    --robinegg-la:    #00cccc ;
+    --blue-la:        #007bff ;
+    --lavender-la:    #b57edc ;
+    --purple-la:      #6f42c1 ;
+    --red-la:         #d9534f ;
+    --orange-la:      #fd7e14 ;
+    --yellow-la:      #f0ad4e ;
+    --green-la:       #28a745 ;
+    --palegreen-la:   #98fb98 ;
+    --teal-la:        #20c997 ;
+    --cyan-la:        #17a2b8 ;
+    --grey-la:        #757575 ;
+    --lightgrey-la:   #93a1a1 ;
+    --white-la:       #ffffff ;
+    --black-la:       #000000 ;
+
+    --light-la:       #dcdccc ;
+    --dark-la:        #252525 ;
+    --color-1-la:     #00cccc ;
+    --color-2-la:     #007bff ;
+    --color-3-la:     #28a745 ;
+    --color-4-la:     #17a2b8 ;
+    --color-5-la:     #98fb98 ;
+
+}
+
+.bg-light-la{
+    background-color: var(--light-la);
+}
+
+.bg-dark-la{
+    background-color: var(--dark-la);
+}
+
+.bg-color-1-la {
+    background-color: var(--color-1-la);
+}
+
+.bg-color-2-la {
+    background-color: var(--color-2-la);
+}
+
+.bg-color-3-la {
+    background-color: var(--color-3-la);
+}
+
+.bg-color-4-la {
+    background-color: var(--color-4-la);
+}
+
+.bg-color-5-la {
+    background-color: var(--color-5-la);
+}
+
+
+
+.text-light-la{
+    color: var(--light-la);
+}
+
+.text-dark-la{
+    color: var(--dark-la);
+}
+
+.text-color-1-la {
+    color: var(--color-1-la);
+}
+
+.text-color-2-la {
+    color: var(--color-2-la);
+}
+
+.text-color-3-la {
+    color: var(--color-3-la);
+}
+
+.text-color-4-la {
+    color: var(--color-4-la);
+}
+
+.text-color-5-la {
+    color: var(--color-5-la);
+}

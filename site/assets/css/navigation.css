@@ -1,0 +1,123 @@
+.logo-la {
+    width: 2rem;
+    margin-right: 0.25rem;
+}
+
+.nav-item-spacing-la{
+    margin: 0 1rem 0 1rem;
+}
+
+
+
+/* 
+#nav-la {
+    font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    padding-top: 1rem !important;
+    /* padding-bottom: 1rem !important;
+    font-weight: 700 !important;
+    background-color: var(--dark-la) !important;
+}
+
+#nav-la .navbar-brand {
+    color: var(--foreground-la);
+}
+
+#nav-la .navbar-nav {
+    margin-top: 0rem;
+}
+
+#nav-la .navbar-nav li.nav-item a.nav-link {
+    color: var(--foreground-la);
+}
+
+#nav-la .navbar-nav li.nav-item a.nav-link:hover {
+    color: var(--green-la);
+}
+
+#nav-la .navbar-nav li.nav-item a.nav-link:active, #nav-la .navbar-nav li.nav-item a.nav-link:focus {
+    color: var(--foreground-la);
+}
+
+#nav-la .navbar-nav li.nav-item a.nav-link.active {
+    color: var(--green-la);
+}
+
+#nav-la .navbar-toggler {
+    font-size: 80%;
+    padding: 0.8rem;
+}
+
+
+
+@media (min-width: 992px) {
+    #nav-la {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        transition: padding-top 0.3s, padding-bottom 0.3s;
+    }
+    #nav-la .navbar-brand {
+        font-size: 1.75em;
+        transition: font-size 0.3s;
+    }
+    #nav-la .navbar-nav {
+        margin-top: 0;
+    }
+    #nav-la .navbar-nav > li.nav-item > a.nav-link.active {
+        color: var(--foreground-la);
+        background: var(--green-la);
+    }
+    #nav-la .navbar-nav > li.nav-item > a.nav-link.active:active, #nav-la .navbar-nav > li.nav-item > a.nav-link.active:focus, #nav-la .navbar-nav > li.nav-item > a.nav-link.active:hover {
+        color: var(--foreground-la);
+        background: var(--green-la);
+    } 
+
+    #nav-la.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }
+
+
+
+} */
+
+
+
+
+/* My divider */
+
+.divider-custom {
+    margin: 1.25rem 0 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider-custom .divider-custom-line {
+    width: 100%;
+    max-width: 7rem;
+    height: 0.25rem;
+    background-color: var(--dark-la);
+    border-radius: 1rem;
+    border-color: var(--dark-la) !important;
+}
+
+.divider-custom .divider-custom-line:first-child {
+    margin-right: 1rem;
+}
+
+.divider-custom .divider-custom-line:last-child {
+    margin-left: 1rem;
+}
+
+.divider-custom .divider-custom-icon {
+    color: var(--dark-la) !important;
+    font-size: 2rem;
+}
+
+.divider-custom.divider-light .divider-custom-line {
+    background-color: var(--white-la);
+}
+
+.divider-custom.divider-light .divider-custom-icon {
+    color: var(--white-la) !important;
+}
