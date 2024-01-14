@@ -1,0 +1,73 @@
+---
+layout: page
+title: "Gallery"
+description: ""
+active: gallery
+header-img: "/assets/images/gallery-bg.jpg"
+galleries:
+ - gallery-name: iceland
+   gallery-folder: /gallery/iceland/
+   gallery-cover: bg2.jpg
+   gallery-date: January 2024
+ 
+---
+
+
+    <div class="gallery">
+ 
+	<section id="content" role="main">
+		<div class="wrapper">
+	
+			<h2>{{page.title}}</h2>
+			
+			<!-- Gallery __-->
+			<div class="gallery masonry-gallery">
+				
+{% for gallery in page.galleries %}  	
+
+	               <figure class="gallery-item">
+                         <figure class="effect-selena">
+					<header class='gallery-icon'>
+		       
+<a href="{{ site.baseurl }}{{ gallery.gallery-folder }}">
+<img src="{{ site.baseurl }}{{ gallery.gallery-folder }}{{ gallery.gallery-cover }}"></a>
+
+					</header>	
+					<figcaption class='gallery-caption'>
+						<div class="entry-summary">
+							<h3>{{image.gallery-name}}</h3>
+							<p>{{image.gallery-date}}</p>
+						</div>
+					</figcaption>
+                       </figure>
+				</figure>
+							
+{% endfor %}		
+				
+			</div>
+			
+		</div><!-- END .wrapper -->
+	</section>
+
+
+<!-- jQuery -->    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/retina.min.js"></script>
+<!-- include Masonry -->
+<script src="{{ site.baseurl }}/assets/js/isotope.pkgd.min.js"></script> 
+<!-- include mousewheel plugins -->
+<script src="{{ site.baseurl }}/assets/js/jquery.mousewheel.min.js"></script>
+<!-- include carousel plugins -->
+<script src="{{ site.baseurl}}/assets/js/jquery.tinycarousel.min.js"></script>
+<!-- include svg line drawing plugin -->
+<script src="{{ site.baseurl }}/assets/js/jquery.lazylinepainter.min.js"></script>
+<!-- include custom script -->
+<script src="{{ site.baseurl }}/assets/js/scripts.js"></script>
+<!-- Modernizr -->
+ <script src="{{ site.baseurl }}/assets/js/modernizr.js"></script>
+
+</div>
+
+
+

@@ -1,0 +1,132 @@
+---
+layout: page
+title: "album"
+description: "masonry"
+header-img: "/gallery/iceland/bg2.jpg"
+album-title: "my 2nd album"
+images:
+ - image_path: /gallery/iceland/bg1.jpg
+   caption: IMAGE TITLE
+   copyright: © photorama
+ - image_path: /gallery/iceland/bg2.jpg
+   caption: IMAGE TITLE
+   copyright: © photorama
+ - image_path: /gallery/iceland/bg3.jpg
+   caption: IMAGE TITLE
+   copyright: © photorama
+ - image_path: /gallery/iceland/bg3.jpg
+   caption: IMAGE TITLE
+   copyright: © photorama
+ - image_path: /gallery/iceland/bg3.jpg
+   caption: IMAGE TITLE
+   copyright: © photorama
+ - image_path: /gallery/iceland/bg1.jpg
+   caption: IMAGE TITLE
+   mfp-title: IMAGE TITLE
+   copyright: © photorama
+ - image_path: /gallery/iceland/bg2.jpg
+   caption: IMAGE TITLE
+   copyright: © photorama
+ - image_path: /gallery/iceland/bg3.jpg
+   caption: IMAGE TITLE
+   copyright: © photorama
+ - image_path: /gallery/iceland/bg3.jpg
+   caption: IMAGE TITLE
+   copyright: © photorama
+ - image_path: /gallery/iceland/bg2.jpg
+   caption: IMAGE TITLE
+   copyright: © photorama
+ - image_path: /gallery/iceland/bg3.jpg
+   caption: IMAGE TITLE
+   copyright: © photorama
+ - image_path: /gallery/iceland/bg3.jpg
+   caption: IMAGE TITLE
+   copyright: © photorama
+ - image_path: /gallery/iceland/bg2.jpg
+   caption: IMAGE TITLE
+   copyright: © photorama
+ - image_path: /gallery/iceland/bg3.jpg
+   caption: IMAGE TITLE
+   copyright: © photorama
+ - image_path: /gallery/iceland/bg3.jpg
+   caption: IMAGE TITLE
+   copyright: © photorama
+ - image_path: /gallery/iceland/bg3.jpg
+   caption: IMAGE TITLE
+   copyright: © photorama
+---
+
+<html lang="en">
+<head>
+	<meta content="charset=utf-8">
+
+  <script src="{{ site.baseurl }}/assets/js/jquery-3.6.0.min.js"></script>
+
+  <script src="{{ site.baseurl }}/assets/js/imagesloaded.pkgd.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/imagesloaded.pkgd.js"></script>
+</head>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  font-family: sans-serif;
+}
+
+/* ---- grid ---- */
+
+.grid {
+
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-item {
+  float: left;
+  /* max-width: 100%; */
+  height: 250px;
+  margin: 0.5rem;
+
+}
+
+
+
+
+
+
+</style>
+    <body>
+ 
+      {% include grid.html %}
+
+            
+  <script>
+
+
+
+$('#container').imagesLoaded()
+  .always( function( instance ) {
+    console.log('all images loaded');
+  })
+  .done( function( instance ) {
+    console.log('all images successfully loaded');
+  })
+  .fail( function() {
+    console.log('all images loaded, at least one is broken');
+  })
+  .progress( function( instance, image ) {
+    var result = image.isLoaded ? 'loaded' : 'broken';
+    console.log( 'image is ' + result + ' for ' + image.img.src );
+  });
+
+
+
+    </script>
+</body></html>

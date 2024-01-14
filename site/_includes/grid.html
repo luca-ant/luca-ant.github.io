@@ -1,0 +1,14 @@
+
+
+  <!-- Gallery __-->
+  <div class="grid bg-dark-la">
+    
+{% for image in page.images %}
+
+<img class="grid-item rounded" src="{{ site.baseurl }}{{ image.image_path }}">
+  
+{% endfor %}
+
+        </div>
+
+
