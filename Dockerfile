@@ -28,5 +28,5 @@ EXPOSE 1409
 
 # USER jekyll
 
-# ENTRYPOINT [ "entrypoint.sh" ]
-CMD [ "jekyll", "--help" ]
+ENTRYPOINT [ "entrypoint.sh" ]
+# CMD [ "jekyll", "--help" ]
