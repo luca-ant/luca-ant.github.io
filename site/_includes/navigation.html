@@ -1,44 +1,37 @@
-<!-- BARRA DI NAVIGAZIONE-->
-<nav class="navbar navbar-expand-lg navbar-light shadow-5-strong" id="nav-la">
+
+<nav class="navbar navbar-expand-md static-top" id="nav-la">
 
     <div class="container-fluid">
 
-    <!-- BRAND -->
-    <a class="navbar-brand font-weight-bold"  href="/">
-        <img class="logo-la" src="{{ site.baseurl }}/assets/images/logo.png" alt=""/>
-        <span  class="text-color-1-la font-weight-bold">L</span>uca <span class="text-color-2-la">PH</span></a>
+        <a class="navbar-brand font-weight-bold text-light-la"  href="/">
+            <img class="logo-la" src="{{ site.baseurl }}/assets/images/logo.png" alt=""/>
+            <span  class="text-color-1-la font-weight-bold">L</span>uca <span class="text-color-2-la">PH</span></a>
 
-    <!-- RESPONSIVE BUTTON -->        
-    <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold text-light-la rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="fas fa-bars"></span>
-    </button>
+        <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold text-light-la rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fas fa-bars"></span>
+        </button>
 
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+                    
+            <ul class="navbar-nav ml-auto">
 
-    <!-- RESPONSIVE MENU-->      
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-                
-    <!-- MENU -->
-    <ul class="navbar-nav ml-auto text-uppercase ">
+                {% for nav_item in site.data.navigation %}
 
-        {% for nav_item in site.data.navigation %}
-            {% if page.url == nav_item.link %} 
-            <li class="nav-item nav-item-spacing-la"><a class="text-color-2-la active" href="{{ nav_item.link }}">{{ nav_item.name }}</a></li>
-            {% else %}
-            <li class="nav-item nav-item-spacing-la"><a class="text-color-1-la" href="{{ nav_item.link }}">{{ nav_item.name }}</a></li>
-            {% endif %}
+                    {% if page.url == nav_item.link %} 
+                    <li class="nav-item nav-item-la nav-item-spacing-la active"><a class="text-color-1-la text-uppercase font-weight-bold" href="{{ nav_item.link }}">{{ nav_item.name }}</a></li>
+                    {% else %}
+                    <li class="nav-item nav-item-la nav-item-spacing-la"><a class="text-light-la text-uppercase font-weight-bold" href="{{ nav_item.link }}">{{ nav_item.name }}</a></li>
+                    {% endif %}
 
-        {% endfor %}
+                {% endfor %}
 
-      </ul>
+            </ul>
 
-
-              <!-- <form class="form-inline my-2 my-lg-0">
+            <!-- <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-              </form> -->
-    <!-- FINE RESPONSIVE MENU --> 
-            </div>
+            </form> -->
+        </div>
     </div>
 
-    <!-- FINE NAVBAR --> 
-          </nav>
+</nav>

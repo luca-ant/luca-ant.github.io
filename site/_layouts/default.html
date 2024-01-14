@@ -12,15 +12,17 @@
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/WYSIWYG.css">
 </head> -->
 
-<body class="body-padded-la">
+<!-- <body class="body-padded-la"> -->
+<body>
 
     {% include navigation.html %}
 
     {{ content }}
 
+    {% include scroll_to_top.html %}  
+
     {% include footer.html %}
 
-    {% include scroll_to_top.html %}  
 
 </body>
 
