@@ -1,0 +1,54 @@
+<footer>
+<div class="container">
+        <!-- <div class="row"> -->
+            <div class="list-social text-center">
+
+                    {% if site.facebook_username %}
+                    <a href="https://facebook.com/{{ site.facebook_username }}" data-toggle="tooltip" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook-f fa-2x" style="color: #3b5998;"></i>
+                    </a>
+
+                    {% endif %}
+
+                    {% if site.twitter_username %}
+                    <a href="https://twitter.com/{{ site.twitter_username }}" data-toggle="tooltip" target="_blank" title="Twitter">
+                        <i class="fab fa-twitter fa-2x" style="color: #55acee;"></i>
+                    </a>                    
+                    {% endif %}
+
+                    {% if site.instagram_username %}
+                    <a href="https://instagram.com/{{ site.instagram_username }}" data-toggle="tooltip" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram fa-2x" style="color: #ac2bac;"></i>
+                    </a>
+                    {% endif %}
+
+                    {% if site.linkedin_username %}
+                    <a href="https://linkedin.com/in/{{ site.linkedin_username }}" data-toggle="tooltip" target="_blank" title="Linkedin">
+                        <i class="fab fa-linkedin-in fa-2x" style="color: #0082ca;"></i>
+                    </a>
+                    {% endif %}
+
+                    {% if site.github_username %}
+                    <a href="https://github.com/{{ site.github_username }}" data-toggle="tooltip" target="_blank" title="Github">
+                        <i class="fab fa-github fa-2x" style="color: #333333;"></i>
+                    </a>
+                    {% endif %}
+
+                    {% if site.email %}
+                    <a href="mailto:{{ site.email }}" data-toggle="tooltip" target="_blank" title="Email">
+                        <i class="fab fa fa-envelope fa-2x" style="color: #dcdcdc;"></i>
+                    </a>
+                    {% endif %}
+
+                    {% if site.feed %}
+                    <a href="{{ site.baseurl }}/feed.xml" data-toggle="tooltip" target="_blank" title="Feed">
+                        <i class="fab fa fa-rss fa-2x" style="color: #FF9A00;"></i>
+                    </a>                    
+                    {% endif %}
+
+                </div>
+                
+                <p class="copyright text-muted">Copyright &copy; {{ site.author }} {{ site.time | date: '%Y' }}</p>                
+        <!-- </div> -->
+    </div>
+</footer>

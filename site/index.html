@@ -1,6 +1,6 @@
 ---
 layout: home
-main-title: "LUCA_PH"
+site-title: "Luca ph"
 subtitle: "Travels photography and more"
 description: ""
 images:
@@ -25,14 +25,13 @@ images:
 
 ---
 
-
 <div id="slides">
 
   {% for image in page.images %}  	
 
   <a class="slide" title="{{ image.image_title }}" href="#">
     <span class="{{ image.image_animation }}" style='background-image: url("{{ site.baseurl }}{{ image.image_path }}")'></span>
-    <div class="static-image-title position-absolute text-light-la">
+    <div class="static-image-title position-absolute text-white">
       <p>{{ image.image_title }}</p>
     </div>
   </a>
@@ -42,36 +41,17 @@ images:
 </div>
 
 
-<div class="position-absolute static-title text-light-la">
-  <h2><strong>{{ page.main-title }}</strong></h2>
-  <h3>{{ page.subtitle }}</h3> 
+<div class="position-absolute static-button btn rounded border-white">
+  <a class="text-white font-weight-bold" href="/gallery/">Have a look!</a>
 </div>
 
 
-<!-- <div id="slides">
+<div class="position-absolute static-title text-white">
+  <h1><strong>{{ page.site-title }}</strong></h1>
+  <h4>{{ page.subtitle }}</h4> 
+</div>
 
-  
-  <a class="slide" title="Revolve Waterbottle | 2017" href="#">
-    <span class="animate down" style="background-image: url(https://source.unsplash.com/1200x900/?yoga)"></span>
-    <div class="static-content"><h1>Revolve Waterbottle</h1></div>
-  </a>
-  <a class="slide" title="Lunchbox: Like Tableware | 2017" href="#">
-    <span class="animate in" style="background-image: url(https://source.unsplash.com/1200x900/?yoga)"></span>
-    <div class="static-content"><h1>Lunchbox</h1></div>
-  </a>
-  <a class="slide" title="Salad Shaker | 2017" href="#">
-    <span class="animate down" style="background-image: url(https://source.unsplash.com/1200x900/?yoga)"></span>
-    <div class="static-content"><h1>Salad Shaker</h1></div>
-  </a>
-  <a class="slide" title="Bike Basket | 2016" href="#">
-    <span class="animate out" style="background-image: url(https://source.unsplash.com/1200x900/?yoga)"></span>
-    <div class="static-content"><h1>Bike Basket</h1></div>
-  </a>
-  <a class="slide" title="MIDI Controller | 2018" href="#">
-    <span class="animate right" style="background-image: url(https://source.unsplash.com/1200x900/?yoga)"></span>
-    <div class="static-content"><h1>MIDI Controller</h1></div>
-  </a>
-</div> -->
+
 
 <script>
   // These are te default settings.
