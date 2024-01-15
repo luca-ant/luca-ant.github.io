@@ -1,13 +1,13 @@
 
-<nav class="navbar navbar-expand-md static-top" id="nav-la">
+<nav class="navbar navbar-expand-md fixed-top" id="nav-la">
 
     <div class="container-fluid">
 
-        <a class="navbar-brand font-weight-bold text-light-la"  href="/">
+        <a class="navbar-brand font-weight-bold text-white"  href="/">
             <img class="logo-la" src="{{ site.baseurl }}/assets/images/logo.png" alt=""/>
             <span  class="text-color-1-la font-weight-bold">L</span>uca <span class="text-color-2-la">PH</span></a>
 
-        <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold text-light-la rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="fas fa-bars"></span>
         </button>
 
@@ -18,9 +18,9 @@
                 {% for nav_item in site.data.navigation %}
 
                     {% if page.url == nav_item.link %} 
-                    <li class="nav-item nav-item-la nav-item-spacing-la active"><a class="text-color-1-la text-uppercase font-weight-bold" href="{{ nav_item.link }}">{{ nav_item.name }}</a></li>
+                    <li class="nav-item nav-item-spacing-la"><a class="text-white text-uppercase font-weight-bold nav-item-la border-white rounded" href="{{ nav_item.link }}">{{ nav_item.name }}</a></li>
                     {% else %}
-                    <li class="nav-item nav-item-la nav-item-spacing-la"><a class="text-light-la text-uppercase font-weight-bold" href="{{ nav_item.link }}">{{ nav_item.name }}</a></li>
+                    <li class="nav-item nav-item-spacing-la"><a class="text-white text-uppercase font-weight-bold nav-item-la" href="{{ nav_item.link }}">{{ nav_item.name }}</a></li>
                     {% endif %}
 
                 {% endfor %}

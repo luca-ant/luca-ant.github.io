@@ -1,73 +1,86 @@
 ---
 layout: page
-title: "Gallery"
-description: ""
-active: gallery
+title: "albums"
+description: "archive"
 header-img: "/assets/images/gallery-bg.jpg"
 galleries:
  - gallery-name: iceland
    gallery-folder: /gallery/iceland/
    gallery-cover: bg2.jpg
    gallery-date: January 2024
- 
+ - gallery-name: iceland
+   gallery-folder: /gallery/iceland/
+   gallery-cover: bg1.jpg
+   gallery-date: January 2024
+ - gallery-name: iceland
+   gallery-folder: /gallery/iceland/
+   gallery-cover: bg3.jpg
+   gallery-date: January 2024
+ - gallery-name: iceland
+   gallery-folder: /gallery/iceland/
+   gallery-cover: bg2.jpg
+   gallery-date: January 2024
+ - gallery-name: iceland
+   gallery-folder: /gallery/iceland/
+   gallery-cover: bg1.jpg
+   gallery-date: January 2024
 ---
 
+<html lang="en">
+<head>
+	<meta content="charset=utf-8">
+    <!-- <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/selena.css"> -->
+    <!-- <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/WYSIWYG.css"> -->
 
-    <div class="gallery">
- 
-	<section id="content" role="main">
-		<div class="wrapper">
+</head>
+
+
+<body>
+	<div class="container">
 	
-			<h2>{{page.title}}</h2>
-			
+			<!-- <h2 class="text-white">{{page.title}}</h2> -->
+		
 			<!-- Gallery __-->
 			<div class="gallery masonry-gallery">
-				
+
 {% for gallery in page.galleries %}  	
 
-	               <figure class="gallery-item">
-                         <figure class="effect-selena">
+				<figure class="gallery-item">
 					<header class='gallery-icon'>
 		       
-<a href="{{ site.baseurl }}{{ gallery.gallery-folder }}">
-<img src="{{ site.baseurl }}{{ gallery.gallery-folder }}{{ gallery.gallery-cover }}"></a>
+					<a href="{{ site.baseurl }}{{ gallery.gallery-folder }}">
+					<img class="rounded" src="{{ site.baseurl }}{{ gallery.gallery-folder }}{{ gallery.gallery-cover }}"></a>
 
 					</header>	
 					<figcaption class='gallery-caption'>
 						<div class="entry-summary">
-							<h3>{{image.gallery-name}}</h3>
-							<p>{{image.gallery-date}}</p>
+							<h3>{{gallery.gallery-name}}</h3>
+							<p>{{gallery.gallery-date}}</p>
 						</div>
 					</figcaption>
-                       </figure>
 				</figure>
 							
 {% endfor %}		
 				
-			</div>
+	</div>
 			
-		</div><!-- END .wrapper -->
-	</section>
-
+</div>
 
 <!-- jQuery -->    
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="{{ site.baseurl }}/assets/js/retina.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/jquery-3.6.0.min.js"></script>
+<!-- <script src="{{ site.baseurl }}/assets/js/retina.min.js"></script> -->
 <!-- include Masonry -->
 <script src="{{ site.baseurl }}/assets/js/isotope.pkgd.min.js"></script> 
 <!-- include mousewheel plugins -->
-<script src="{{ site.baseurl }}/assets/js/jquery.mousewheel.min.js"></script>
+<!-- <script src="{{ site.baseurl }}/assets/js/jquery.mousewheel.min.js"></script> -->
 <!-- include carousel plugins -->
-<script src="{{ site.baseurl}}/assets/js/jquery.tinycarousel.min.js"></script>
+<!-- <script src="{{ site.baseurl}}/assets/js/jquery.tinycarousel.min.js"></script> -->
 <!-- include svg line drawing plugin -->
-<script src="{{ site.baseurl }}/assets/js/jquery.lazylinepainter.min.js"></script>
+<!-- <script src="{{ site.baseurl }}/assets/js/jquery.lazylinepainter.min.js"></script> -->
 <!-- include custom script -->
-<script src="{{ site.baseurl }}/assets/js/scripts.js"></script>
+<script src="{{ site.baseurl }}/assets/js/gallery.js"></script>
 <!-- Modernizr -->
- <script src="{{ site.baseurl }}/assets/js/modernizr.js"></script>
+ <!-- <script src="{{ site.baseurl }}/assets/js/modernizr.js"></script> -->
 
-</div>
-
-
-
+</body></html>

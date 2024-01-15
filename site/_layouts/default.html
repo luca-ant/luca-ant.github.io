@@ -4,12 +4,11 @@
 {% include head.html %}
 
 <head>
-
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/gallery.css">
-<!-- <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/selena.css"> -->
-<!-- <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/WYSIWYG.css"> -->
-
-
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/default.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/gallery.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/page-header.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/footer.css">
+    
 </head>
 
 <!-- <body class="body-padded-la"> -->
@@ -17,9 +16,9 @@
 
     {% include navigation.html %}
 
-    {{ content }}
-
     {% include scroll_to_top.html %}  
+
+    {{ content }}
 
     {% include footer.html %}
 

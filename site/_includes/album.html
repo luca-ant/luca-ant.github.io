@@ -1,9 +1,5 @@
 
- <section id="content" role="main">
-  <div class="wrapper">
-<br><br>
-      <h2>{{page.album-title}}</h2>
-
+<div class="container">
 
       <!-- Gallery __-->
       <div class="gallery masonry-gallery">
@@ -13,9 +9,9 @@
           <figure class="gallery-item">
               <header class='gallery-icon'>
 
-<a href="{{ site.baseurl }}{{ image.image_path }}" class="popup" title="{{ image.caption }}" data-caption="{{ image.copyright }}">
-<img class="rounded" src="{{ site.baseurl }}{{ image.image_path }}"></a>
-                  
+              <a href="{{ site.baseurl }}{{ image.image_path }}" class="popup" title="{{ image.caption }}" data-caption="{{ image.copyright }}">
+              <img class="rounded" src="{{ site.baseurl }}{{ image.image_path }}"></a>
+                                
               </header>	
               <figcaption class='gallery-caption'>
                   <div class="entry-summary">
@@ -27,17 +23,16 @@
           
 {% endfor %}
 
-      </div>
+    </div>
 
-  </div>
-</section>
+</div>
 
 <!-- jQuery -->    
 
 <script src="{{ site.baseurl }}/assets/js/jquery-3.6.0.min.js"></script>
 
 <!-- include Masonry -->
-<script src="{{ site.baseurl }}/assets/js/isotope.pkgd.js"></script> 
+<!-- <script src="{{ site.baseurl }}/assets/js/isotope.pkgd.js"></script>  -->
 <script src="{{ site.baseurl }}/assets/js/isotope.pkgd.min.js"></script> 
 
 <!-- include custom script -->
