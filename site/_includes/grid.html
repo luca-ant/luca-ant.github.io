@@ -1,14 +1,44 @@
 
+ <section id="content" role="main">
+  <div class="wrapper">
+<br><br>
+      <h2>{{page.album-title}}</h2>
 
-  <!-- Gallery __-->
-  <div class="grid bg-dark-la">
-    
-{% for image in page.images %}
 
-<img class="grid-item rounded" src="{{ site.baseurl }}{{ image.image_path }}">
+      <!-- Gallery __-->
+      <div class="gallery masonry-gallery">
   
+{% for image in page.images %}  		
+
+          <figure class="gallery-item">
+              <header class='gallery-icon'>
+
+<a href="{{ site.baseurl }}{{ image.image_path }}" class="popup" title="{{ image.caption }}" data-caption="{{ image.copyright }}">
+<img class="rounded" src="{{ site.baseurl }}{{ image.image_path }}"></a>
+                  
+              </header>	
+              <figcaption class='gallery-caption'>
+                  <div class="entry-summary">
+                      <h3>{{image.caption}}</h3>
+                      <p>{{image.copyright}}</p>
+                  </div>
+              </figcaption>
+          </figure>
+          
 {% endfor %}
 
-        </div>
+      </div>
 
+  </div>
+</section>
 
+<!-- jQuery -->    
+
+<script src="{{ site.baseurl }}/assets/js/jquery-3.6.0.min.js"></script>
+
+<!-- include Masonry -->
+<script src="{{ site.baseurl }}/assets/js/isotope.pkgd.js"></script> 
+<script src="{{ site.baseurl }}/assets/js/isotope.pkgd.min.js"></script> 
+
+<!-- include custom script -->
+<script src="{{ site.baseurl }}/assets/js/gallery.js"></script>
