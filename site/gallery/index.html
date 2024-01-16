@@ -3,27 +3,11 @@ layout: page
 title: "albums"
 description: "archive"
 header-img: "/assets/images/gallery-bg.jpg"
-galleries:
- - gallery-name: iceland
-   gallery-folder: /gallery/iceland/
-   gallery-cover: bg2.jpg
-   gallery-date: January 2024
- - gallery-name: iceland
-   gallery-folder: /gallery/iceland/
-   gallery-cover: bg1.jpg
-   gallery-date: January 2024
- - gallery-name: iceland
-   gallery-folder: /gallery/iceland/
-   gallery-cover: bg3.jpg
-   gallery-date: January 2024
- - gallery-name: iceland
-   gallery-folder: /gallery/iceland/
-   gallery-cover: bg2.jpg
-   gallery-date: January 2024
- - gallery-name: iceland
-   gallery-folder: /gallery/iceland/
-   gallery-cover: bg1.jpg
-   gallery-date: January 2024
+albums:
+- album-name: iceland
+  album-folder: /gallery/iceland/
+  album-cover: IMG_20240103_152541.JPG
+  album-date: January 2024
 ---
 
 <html lang="en">
@@ -43,19 +27,19 @@ galleries:
 			<!-- Gallery __-->
 			<div class="gallery masonry-gallery">
 
-{% for gallery in page.galleries %}  	
+{% for album in page.albums %}  	
 
 				<figure class="gallery-item">
 					<header class='gallery-icon'>
 		       
-					<a href="{{ site.baseurl }}{{ gallery.gallery-folder }}">
-					<img class="rounded" src="{{ site.baseurl }}{{ gallery.gallery-folder }}{{ gallery.gallery-cover }}"></a>
+					<a href="{{ site.baseurl }}{{ album.album-folder }}">
+					<img class="rounded" src="{{ site.baseurl }}{{ album.album-folder }}{{ album.album-cover }}"></a>
 
 					</header>	
 					<figcaption class='gallery-caption'>
 						<div class="entry-summary">
-							<h3>{{gallery.gallery-name}}</h3>
-							<p>{{gallery.gallery-date}}</p>
+							<h3>{{album.album-name}}</h3>
+							<p>{{album.album-date}}</p>
 						</div>
 					</figcaption>
 				</figure>
