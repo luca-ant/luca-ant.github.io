@@ -6,7 +6,7 @@ if [ $EUID == 0 ] ; then
 fi
 
 WD=$(dirname "$(realpath "$0")")
-SITE_DATA="$WD/site"
+SITE_DATA="$WD"
 
 mkdir -p "$SITE_DATA" >/dev/null 2>&1
 
