@@ -40,7 +40,6 @@ google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
 
 
 # Server
-destination:      	 ./_site
 port:             	 1409
 
 # Build settings
