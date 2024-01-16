@@ -43,8 +43,8 @@ google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
 port:             	 1409
 
 # Build settings
-# theme: minima
-theme: jekyll-theme-clean-blog
+theme: minima
+# theme: jekyll-theme-clean-blog
 plugins:
   - jekyll-feed
 
