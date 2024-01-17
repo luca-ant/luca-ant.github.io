@@ -1,10 +1,3 @@
----
-layout: page
-title: "Iceland"
-description: "La terra del ghiaccio e del fuoco"
-header-img: "/gallery/iceland/IMG_20240103_152541.JPG"
-album-folder: /gallery/iceland/
-images:
 - image-name: IMG_20240101_122118.jpg
   caption: Ytri Tunga
   copyright: © Luca Antognetti
@@ -57,6 +50,9 @@ images:
   caption: Arnarstapi Cliff
   copyright: © Luca Antognetti
 - image-name: IMG_20240101_155525.jpg
+  caption: Gatklettur
+  copyright: © Luca Antognetti
+- image-name: IMG_20240101_155730.jpg
   caption: Gatklettur
   copyright: © Luca Antognetti
 - image-name: IMG_20240101_160403.jpg
@@ -257,7 +253,3 @@ images:
 - image-name: IMG_20240107_130422.jpg
   caption: Reykjavík
   copyright: © Luca Antognetti
----
-
-
-{% include album.html %}
