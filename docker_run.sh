@@ -10,7 +10,7 @@ SITE_DATA="$WD"
 
 mkdir -p "$SITE_DATA" >/dev/null 2>&1
 
-CONTAINER_NAME="luca_ph"
+CONTAINER_NAME="luca_photograpy"
 docker stop $CONTAINER_NAME && docker rm $CONTAINER_NAME
 
 # docker run \
